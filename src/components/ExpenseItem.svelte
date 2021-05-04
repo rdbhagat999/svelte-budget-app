@@ -1,8 +1,9 @@
 <script>
+  import { slide } from "svelte/transition";
   export let expenseItem;
-  let displayAmount = false;
   export let startEditingExpense;
   export let removeExpense;
+  let displayAmount = false;
 </script>
 
 <article id={expenseItem.id} class="single-expense">
@@ -17,7 +18,7 @@
       </button>
     </h2>
     {#if displayAmount}
-      <h4>Amount: ${expenseItem.amount}</h4>
+      <h4 transition:slide>Amount: ${expenseItem.amount}</h4>
     {/if}
   </div>
   <div class="expense-buttons">

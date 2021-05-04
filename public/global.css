@@ -310,7 +310,7 @@ Modal
   padding: 1.25rem 0;
 }
 .modal-container .form {
-  position: static;
+  position: relative;
 }
 .modal-container .close-btn {
   top: 2%;

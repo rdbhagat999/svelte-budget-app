@@ -39,13 +39,16 @@
       <label for="name">Name</label>
       <input type="text" id="name" bind:value={expense.name} />
     </div>
+
     <div class="form-control">
       <label for="amount">Amount</label>
       <input type="number" id="amount" bind:value={expense.amount} />
     </div>
+
     {#if !isValid}
       <p class="form-empty">All fields are required</p>
     {/if}
+
     <button
       type="submit"
       class="btn btn-block"

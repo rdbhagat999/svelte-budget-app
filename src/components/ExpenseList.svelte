@@ -9,6 +9,7 @@
   export let showAddForm;
   export let hideAddForm;
   export let isFormDisplayed = false;
+
   let expense = {};
 
   // reactive
@@ -18,7 +19,6 @@
     : 1;
 
   // functions
-
   function addExpense(expense) {
     expense.id = lastExpenseId;
     expenses = [expense, ...expenses];
